@@ -1,0 +1,46 @@
+clients:
+  - clientId: "did:key:zDnaezLhSFWRZ1zrYQRwLxV8nDWmb2REHoUf7N3qvna1TFina"
+    url: "http://localhost:8081"
+    redirectUris: []
+    scopes: []
+    clientAuthenticationMethods: ["client_secret_jwt"]
+    authorizationGrantTypes: ["client_credentials"]
+    postLogoutRedirectUris: []
+    requireAuthorizationConsent: false
+    requireProofKey: false
+    jwkSetUrl: "http://localhost:8080/oidc/did/did:key:zDnaezLhSFWRZ1zrYQRwLxV8nDWmb2REHoUf7N3qvna1TFina"
+    tokenEndpointAuthenticationSigningAlgorithm: "ES256"
+  - clientId: "isbe-issuer"
+    url: "http://localhost:8081"
+    redirectUris:
+      ["http://localhost:8084/realms/isbe-issuer/broker/vc/endpoint"]
+    scopes: ["openid_learcredential"]
+    clientAuthenticationMethods: ["client_secret_jwt"]
+    authorizationGrantTypes: ["authorization_code"]
+    postLogoutRedirectUris: ["http://localhost:8084"]
+    requireAuthorizationConsent: false
+    requireProofKey: false
+    jwkSetUrl: "http://localhost:8084/realms/isbe-issuer/protocol/openid-connect/certs"
+    tokenEndpointAuthenticationSigningAlgorithm: "ES256"
+  - clientId: "did:key:zDnaeypyWjzn54GuUP7PmDXiiggCyiG7ksMF7Unm7kjtEKBez"
+    url: "https://evidenceledger.eu"
+    redirectUris: ["https://evidenceledger.eu/auth/vc/callback"]
+    scopes: ["openid_learcredential"]
+    clientAuthenticationMethods: ["client_secret_jwt"]
+    authorizationGrantTypes: ["authorization_code", "refresh_token"]
+    postLogoutRedirectUris: ["https://evidenceledger.eu/"]
+    requireAuthorizationConsent: false
+    requireProofKey: false
+    jwkSetUrl: "http://localhost:8080/oidc/did/did:key:zDnaeypyWjzn54GuUP7PmDXiiggCyiG7ksMF7Unm7kjtEKBez"
+    tokenEndpointAuthenticationSigningAlgorithm: "ES256"
+  - clientId: "did:key:zDnaeypyWjzn54GuUP7PmDXiiggCyiG7ksMF7Unm7kjtEKBej"
+    url: "http://localhost:8080"
+    redirectUris: ["https://evidenceledger.eu/auth/vc/callback"]
+    scopes: ["openid_learcredential"]
+    clientAuthenticationMethods: ["client_secret_jwt"]
+    authorizationGrantTypes: ["authorization_code", "refresh_token"]
+    postLogoutRedirectUris: ["https://evidenceledger.eu/"]
+    requireAuthorizationConsent: false
+    requireProofKey: false
+    jwkSetUrl: "http://localhost:8080/oidc/did/did:key:zDnaeypyWjzn54GuUP7PmDXiiggCyiG7ksMF7Unm7kjtEKBez"
+    tokenEndpointAuthenticationSigningAlgorithm: "ES256"
